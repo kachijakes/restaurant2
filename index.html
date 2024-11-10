@@ -3,68 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-   <link rel="stylesheet" href="./style.css">
-   <style>
-    a{
-        border-spacing: 10em;
-        text-decoration: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-   </style>
+    <title>Fictional Restaurant</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <style>
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlb3BsZSUyMGluJTIwcmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8fDA%3D');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
-
-    <nav style="background-color: coral;">
-
-        <ul>
-            <a href="#" >HOME</a>
-            <a href="#">APPETIZER</a>
-            <a href="#">MAIN COURSE </a>
-            <a href="#">DESSERT </a>
-            <a href="#">CONTACT</a>
-        </ul>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">Chow Now Restaurant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <h1>SOMPTUOUS Bites Menu</h1>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1 class="">Welcome to Chow Now Restaurant</h1>
+            <button class="btn btn-primary">Explore Our Menu</button>
+        </div>
+    </div>
 
-    <!-- Appetizers Section -->
-    <section class="menu-section" >
+    <!-- Menu Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 menu-item">
+                <img src="https://images.unsplash.com/photo-1564683214965-3619addd900d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVzdGF1cmFudCUyMGRpc2hlc3xlbnwwfHwwfHx8MA%3D%3D">
+                <h3>Vegetarian</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p><strong>$10.99</strong></p>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="https://plus.unsplash.com/premium_photo-1663036447682-8f0d918adbed?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8fDA%3D" class="object-fit img-fluid height:200px">
+                <h3>Meaterian</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui eaque provident totam cumque, quidem laborum voluptatem quisquam, sequi minus velit maxime ex repellendus nobis fugiat aliquam consequatur eos expedita.</p>
+                <p><strong>$12.99</strong></p>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="https://images.unsplash.com/photo-1661588669110-81142a5b9e57?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TmlnZXJpYW4lMjBmb29kfGVufDB8fDB8fHww">
+                <h3>Na Collabo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis voluptatibus quae, quos culpa nobis alias deserunt doloribus enim repudiandae in nihil reprehenderit, nulla facilis consectetur sunt natus, vero repellat!</p>
+                <p><strong>$9.99</strong></p>
+            </div>
+        </div>
+    </div>
 
-        <h2>Appetizers</h2>
-        <ul>
-            <li><strong>Bruschetta</strong> - Grilled bread topped with fresh tomatoes, basil, and garlic.</li>
-            <li><strong>Stuffed Mushrooms</strong> - Mushrooms filled with a blend of cheeses and herbs.</li>
-            <li><strong>Garlic Shrimp</strong> - Sautéed shrimp in garlic and butter, served with crusty bread.</li>
-        </ul>
-    </section>
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-9 ">
+                <img src="https://plus.unsplash.com/premium_photo-1705927288785-6ebaf9483273?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-md-3">
+                <h2>About Us</h2>
+                <p>Welcome to Chow Now Restaurant, where we serve delicious dishes made with the freshest ingredients. Our chefs are passionate about creating culinary masterpieces that will tantalize your taste buds. Join us for an unforgettable dining experience.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Main Courses Section -->
-    <section class="menu-section">
-        <h2>Main Courses</h2>
-        <ul>
-            <li><strong>Grilled Salmon</strong> - Served with lemon butter sauce and seasonal vegetables.</li>
-            <li><strong>Margherita Pizza</strong> - Classic pizza topped with fresh mozzarella, tomatoes, and basil.</li>
-            <li><strong>Spaghetti Carbonara</strong> - Traditional pasta with pancetta, egg, and Parmesan cheese.</li>
-        </ul>
-    </section>
+    <!-- Contact Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group justfy-content-center align-content-center">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary ">Submit</button>
+        </form>
+    </div>
 
-    <!-- Desserts Section -->
-    <section class="menu-section">
-        <h2>Desserts</h2>
-        <ul>
-            <li><strong>Tiramisu</strong> - Layered espresso-soaked ladyfingers with mascarpone cream.</li>
-            <li><strong>Chocolate Lava Cake</strong> - Warm chocolate cake with a gooey center, served with vanilla ice cream.</li>
-            <li><strong>Cheesecake</strong> - Classic cheesecake with a graham cracker crust and fresh strawberries.</li>
-        </ul>
-    </section>
-
-    <!-- Contact Link -->
-    <footer>
-        <p>For reservations or inquiries, <a href="contact.html">contact us</a>.</p>
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Fictional Restaurant. All rights reserved.</p>
+        <div>
+            <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/24" alt="Twitter"></a>
+            <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
+        </div>
     </footer>
 
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
 </body>
 </html>
